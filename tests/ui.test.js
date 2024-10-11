@@ -48,7 +48,7 @@ test('Login with valid credentials', async ({ page }) => {
   await page.$('a[href="/catalog"]');
   expect(page.url()).toBe('http://localhost:3000/catalog');
 });
-
+ 
 test('Login with empty input fields', async ({ page }) => {
   await page.goto('http://localhost:3000/login');
   await page.click('input[type="submit"]');
